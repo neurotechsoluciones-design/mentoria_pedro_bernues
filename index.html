@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Comercial | Neurotech Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neuroGreen: '#00FF66',
+                        neuroBlue: '#0070F3',
+                        neuroDark: '#0A0F1D',
+                        neuroCard: '#111827',
+                        neuroBorder: '#1F2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        .neon-glow-green {
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.25);
+        }
+        .neon-glow-blue {
+            box-shadow: 0 0 25px rgba(0, 112, 243, 0.25);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #00FF66 0%, #0070F3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 102, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-neuroDark text-gray-100 font-sans antialiased min-h-screen bg-grid-pattern selection:bg-neuroGreen selection:text-black">
+
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-neuroDark/80 border-b border-neuroBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-neuroGreen to-neuroBlue flex items-center justify-center text-neuroDark font-black text-xl shadow-lg">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider text-white">NEUROTECH</span>
+                    <span class="text-xs block text-neuroGreen font-mono uppercase tracking-widest">Solutions</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#vision" class="hover:text-neuroGreen transition-colors">Estrategia</a>
+                <a href="#ruta" class="hover:text-neuroGreen transition-colors">Ruta de Madurez</a>
+                <a href="#plus" class="hover:text-neuroGreen transition-colors">Soporte 24/7</a>
+                <a href="#inversion" class="hover:text-neuroGreen transition-colors">Inversión</a>
+            </div>
+            <div>
+                <a href="#inversion" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-neuroGreen to-neuroBlue text-neuroDark font-bold text-sm hover:opacity-95 transition-all shadow-lg neon-glow-green">
+                    Activar Propuesta
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-neuroBlue/10 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-neuroGreen/10 border border-neuroGreen/30 text-neuroGreen text-xs font-semibold mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-bolt"></i> Programa Exclusivo de Transformación Inmobiliaria con IA
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8">
+                Llevá tu Inmobiliaria al <br><span class="text-gradient">Siguiente Nivel Tecnológico</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed">
+                No es una simple capacitación teórica ni una mentoría aislada. Es un <strong class="text-white">programa de transformación a medida</strong> donde trabajamos codo a codo sobre tus proyectos reales, potenciado por un equipo multidisciplinario.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#inversion" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-neuroGreen text-neuroDark font-extrabold text-base hover:bg-emerald-400 transition-all neon-glow-green text-center">
+                    <i class="fa-solid fa-rocket mr-2"></i> Ver Planes y Cotización
+                </a>
+                <a href="#ruta" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-neuroCard border border-neuroBorder text-white font-semibold text-base hover:bg-gray-800 transition-all text-center">
+                    Explorar la Ruta de Madurez
+                </a>
+            </div>
+
+            <!-- Modalidad Badges -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+                <div class="p-4 rounded-2xl bg-neuroCard border border-neuroBorder flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-neuroGreen/10 text-neuroGreen flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Modalidad Presencial</h4>
+                        <p class="text-gray-400 text-xs">Avenida Libertador 910</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-2xl bg-neuroCard border border-neuroBorder flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-neuroBlue/10 text-neuroBlue flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Acompañamiento Activo</h4>
+                        <p class="text-gray-400 text-xs">Soporte virtual permanente ante dudas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="vision" class="py-20 bg-neuroCard/50 border-y border-neuroBorder">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-neuroGreen mb-3">Estrategia Comercial Disruptiva</h2>
+                <h3 class="text-3xl font-extrabold text-white">¿Por qué este programa es radicalmente diferente?</h3>
+                <p class="text-gray-400 mt-4">Combinamos el conocimiento tecnológico de punta con tu profundo expertise inmobiliario y soporte de especialistas sectoriales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl bg-neuroCard border border-neuroBorder relative group hover:border-neuroGreen/50 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-neuroGreen/10 text-neuroGreen flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">El Plus del Respaldo Activo</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Si surge un problema urgente en tu inmobiliaria, nos contactás, realizamos una sesión virtual de emergencia y lo destrabamos juntos. No estás solo frente a la tecnología.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl bg-neuroCard border border-neuroBorder relative group hover:border-neuroBlue/50 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-neuroBlue/10 text-neuroBlue flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Equipo Multidisciplinario</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Trabajá codo a codo no solo en tecnología, sino con especialistas en la parte contable, legal y operativa según la complejidad de tus proyectos inmobiliarios.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-3xl bg-neuroCard border border-neuroBorder relative group hover:border-neuroGreen/50 transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-neuroGreen/10 text-neuroGreen flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Proceso de Madurez Real</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Desde los fundamentos de lenguaje natural y prompts hasta automatizaciones avanzadas no-code y aplicaciones a medida. Vos definís el rumbo con tu conocimiento sectorial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ruta" class="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-neuroBlue mb-3">Cronograma de Acompañamiento</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Ruta de Madurez en Inteligencia Artificial</h3>
+            <p class="text-gray-400 mt-4">Un plan estructurado en etapas progresivas para garantizar autonomía absoluta.</p>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Mes 1 -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-neuroCard border border-neuroGreen/40 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-neuroGreen text-neuroDark font-black text-xs px-5 py-2 rounded-bl-2xl uppercase tracking-wider">
+                    Mes 1 • Base Sólida
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+                    <div>
+                        <h4 class="text-2xl font-bold text-white">Fundamentos, Comunicación y Primera Aproximación</h4>
+                        <p class="text-neuroGreen text-sm font-semibold mt-1">Inversión: $490.000 ARS (4 sesiones presenciales + soporte virtual)</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                    Lograr una primera aproximación sólida a todas las herramientas de inteligencia artificial. Aprendé a comunicarte de manera efectiva mediante lenguaje natural (prompt engineering aplicado al sector inmobiliario) para automatizar tareas cotidianas y redacción de piezas comerciales.
+                </p>
+                <div class="p-4 rounded-2xl bg-neuroDark border border-neuroBorder text-xs text-gray-400">
+                    <strong class="text-white">Enfoque estratégico:</strong> Vos conocés tu negocio inmobiliario; nosotros la tecnología. Al dominar la base, vos definís con tu expertise en qué áreas querés profundizar.
+                </div>
+            </div>
+
+            <!-- Mes 2 -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-neuroCard border border-neuroBorder relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-neuroBlue text-white font-bold text-xs px-5 py-2 rounded-bl-2xl uppercase tracking-wider">
+                    Mes 2 • Especialización
+                </div>
+                <h4 class="text-2xl font-bold text-white mb-2">Diseño de Asistentes Propios & No-Code</h4>
+                <p class="text-neuroBlue text-sm font-semibold mb-4">Trabajo estratégico junto al equipo especializado (Gustavo, Romina y especialistas)</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                    Diseño de tus propios asistentes personalizados. Introducción al desarrollo de soluciones <em>No-Code</em> (aplicaciones prácticas mediante herramientas como AppSheet y Google Apps Script) para optimizar la gestión de propiedades, clientes y tasaciones.
+                </p>
+            </div>
+
+            <!-- Mes 3 -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-neuroCard border border-neuroBorder relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-gray-700 text-white font-bold text-xs px-5 py-2 rounded-bl-2xl uppercase tracking-wider">
+                    Mes 3 • Escenarios Complejos
+                </div>
+                <h4 class="text-2xl font-bold text-white mb-2">Casos Avanzados y Resolución Multidisciplinaria</h4>
+                <p class="text-gray-300 text-sm font-semibold mb-4">Asesoramiento integral legal, contable y operativo</p>
+                <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                    Trabajo coordinado con áreas específicas (legal, contable y operativa). Optimización de procesos complejos dentro de la estructura de la inmobiliaria y criterios avanzados para la resolución de errores y fallos en los sistemas implementados.
+                </p>
+            </div>
+
+            <!-- Mes 4 Opcional -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-neuroCard to-neuroBlue/10 border border-neuroBlue/50 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-gradient-to-r from-neuroGreen to-neuroBlue text-neuroDark font-black text-xs px-5 py-2 rounded-bl-2xl uppercase tracking-wider">
+                    Módulo Opcional (4to Mes)
+                </div>
+                <h4 class="text-2xl font-bold text-white mb-2">Desarrollo a Medida & Claude Code</h4>
+                <p class="text-neuroGreen text-sm font-semibold mb-4">Trabajo directo junto a ingeniería</p>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Si el día de mañana querés dar el salto definitivo hacia automatizaciones complejas, programación avanzada o integración con Claude Code, este módulo opcional te lleva al siguiente nivel tecnológico absoluto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inversion" class="py-24 bg-neuroCard/50 border-t border-neuroBorder">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-neuroGreen mb-3">Inversión Transparente</h2>
+                <h3 class="text-3xl font-extrabold text-white">Comenzá Hoy Tu Transformación</h3>
+                <p class="text-gray-400 mt-2">Planes claros para estructurar el crecimiento de tu inmobiliaria.</p>
+            </div>
+
+            <div class="p-8 sm:p-12 rounded-3xl bg-neuroCard border-2 border-neuroGreen/60 neon-glow-green relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-neuroGreen text-neuroDark px-6 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest">
+                    Módulo Inicial • Primer Mes
+                </div>
+
+                <div class="text-center mt-4 mb-8">
+                    <span class="text-5xl sm:text-6xl font-black text-white">$490.000</span>
+                    <span class="text-gray-400 text-sm ml-2">ARS / mes</span>
+                </div>
+
+                <ul class="space-y-4 mb-10 text-sm text-gray-300">
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-check text-neuroGreen shrink-0"></i>
+                        <span><strong>4 sesiones presenciales</strong> en Avenida Libertador 910.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-check text-neuroGreen shrink-0"></i>
+                        <span><strong>Acompañamiento virtual continuo</strong> ante dudas e inquietudes.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-check text-neuroGreen shrink-0"></i>
+                        <span>Acceso al equipo multidisciplinario de especialistas técnicos y contables.</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fa-solid fa-check text-neuroGreen shrink-0"></i>
+                        <span>Entrenamiento en prompt engineering y automatización de piezas comerciales.</span>
+                    </li>
+                </ul>
+
+                <div class="p-6 rounded-2xl bg-neuroDark border border-neuroBorder mb-8">
+                    <h5 class="text-white font-bold text-sm mb-2"><i class="fa-solid fa-calculator text-neuroBlue mr-2"></i> Simulador de Duración Total</h5>
+                    <div class="flex items-center justify-between text-xs text-gray-400 mb-2">
+                        <span>Duración del programa base:</span>
+                        <span class="text-white font-bold">3 Meses</span>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-gray-400">
+                        <span>Inversión estimada primer mes:</span>
+                        <span class="text-neuroGreen font-bold">$490.000 ARS</span>
+                    </div>
+                </div>
+
+                <button onclick="openModal()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-neuroGreen to-neuroBlue text-neuroDark font-extrabold text-base hover:opacity-90 transition-all shadow-lg flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Confirmar Propuesta y Agendar Inicio</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+        <div class="bg-neuroCard border border-neuroBorder rounded-3xl max-w-lg w-full p-8 relative">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="text-2xl font-extrabold text-white mb-2">Iniciar Acompañamiento</h3>
+            <p class="text-gray-400 text-sm mb-6">Completá tus datos para coordinar la primera sesión presencial en Av. Libertador 910.</p>
+            
+            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Nombre o Inmobiliaria</label>
+                    <input type="text" required class="w-full bg-neuroDark border border-neuroBorder rounded-xl px-4 py-3 text-white text-sm focus:border-neuroGreen outline-none transition-colors" placeholder="Ej. Inmobiliaria Líder">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-2">Teléfono de Contacto / WhatsApp</label>
+                    <input type="tel" required class="w-full bg-neuroDark border border-neuroBorder rounded-xl px-4 py-3 text-white text-sm focus:border-neuroGreen outline-none transition-colors" placeholder="+54 9 ...">
+                </div>
+                <button type="submit" class="w-full py-4 rounded-xl bg-neuroGreen text-neuroDark font-extrabold text-sm hover:bg-emerald-400 transition-all mt-4">
+                    Enviar Solicitud
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="py-12 border-t border-neuroBorder text-center text-xs text-gray-500">
+        <p>© 2026 Neurotech Solutions. Todos los derechos reservados. | Avenida Libertador 910</p>
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+            document.getElementById('contactModal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('contactModal').classList.remove('flex');
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert('¡Solicitud enviada con éxito! Nos pondremos en contacto a la brevedad para coordinar la primera sesión presencial.');
+            closeModal();
+        }
+    </script>
+</body>
+</html>
